@@ -10,6 +10,7 @@ import TabsContent from '../common/tab/tabsContent';
 import TabHeader from '../common/tab/tabHeader';
 import TabContent from '../common/tab/tabContent';
 import { selectTab, showTabs } from '../common/tab/tabActions';
+import BillingCycleList from './billingCycleList';
 
 class BillingCycle extends Component {
 
@@ -32,7 +33,9 @@ class BillingCycle extends Component {
                         </TabsHeader>
 
                         <TabsContent>
-                            <TabContent id='tabList'><h1>Listar</h1></TabContent>
+                            <TabContent id='tabList'>
+                                <BillingCycleList />
+                            </TabContent>
                             <TabContent id='tabCreate'><h1>Create</h1></TabContent>
                             <TabContent id='tabUpdate'><h1>Update</h1></TabContent>
                             <TabContent id='tabDelete'><h1>Delete</h1></TabContent>
